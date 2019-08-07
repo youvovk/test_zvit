@@ -1,7 +1,76 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@mixin calendar-mixin--num($number) {
+  @if $number == 30 {
+    .calendar#{-$number} :nth-child(1n+31) {
+      display: none;
+    }
+  }
+  @else if $number == 29 {
+    .calendar#{-$number} :nth-child(1n+30) {
+      display: none;
+    }
+  }
+  @else if $number == 28 {
+    .calendar#{-$number}:nth-child(1n+29) {
+      display: none;
+    }
+  }
+}
+
+@mixin day($day, $grid-start, $grid-end) {
+  .calendar-#{$day} div:first-child {
+    grid-column-start: $grid-start;
+    grid-column-end: $grid-end;
+  }
+}
+
+.calendar {
+  font-family: Arial, serif;
+  font-size: 30px;
+  display: grid;
+  grid-template: repeat(6, 100px) / repeat(7, 100px);
+  grid-gap: 1px;
+  margin: 50px;
+
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid black;
+    transition: background-color 0.5s linear, transform 0.5s linear;
+  }
+
+  & div:hover {
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-20px);
+    background-color: pink;
+  }
+}
 
 body {
-  background: $c-gray;
+  background: lighten($color: lightblue, $amount: 12%);
+}
+
+@include calendar-mixin--num(31);
+@include calendar-mixin--num(30);
+@include calendar-mixin--num(29);
+@include calendar-mixin--num(28);
+@include day(mon,1,2);
+@include day(tue,2,3);
+@include day(wed,3,4);
+@include day(thu,4,5);
+@include day(fri,5,6);
+@include day(sat,6,7);
+@include day(sun,7,8);
+
+$months: 28, 29, 30, 31;
+
+@each $month in $months {
+  @for $i from 1 through $month {
+    .calendar-#{$month} div:nth-child(#{$i})::after {
+      content: "#{$i}";
+    }
+  }
 }
