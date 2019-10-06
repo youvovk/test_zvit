@@ -1,7 +1,9 @@
 .body {
   font-family: Roboto, serif;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .text_green {
   color: #4ca34c; }
