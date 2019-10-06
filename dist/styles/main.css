@@ -67,7 +67,7 @@
 
 .arrow-previous {
   position: absolute;
-  top: 203px;
+  top: 205px;
   -webkit-animation-name: arrowShow;
           animation-name: arrowShow;
   -webkit-animation-duration: 2s;
