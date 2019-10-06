@@ -656,15 +656,6 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
-@media (print), (prefers-reduced-motion: reduce) {
-  .animated {
-    -webkit-animation-duration: 1ms !important;
-    animation-duration: 1ms !important;
-    -webkit-transition-duration: 1ms !important;
-    transition-duration: 1ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important; } }
-
 .declaration-navigation__wrapper {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
