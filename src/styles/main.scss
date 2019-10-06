@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 .body {
   font-family: Roboto, serif;
   font-style: normal;
   font-weight: normal;
-  box-sizing: border-box;
 }
 
 .text_green {
@@ -151,7 +154,7 @@
 
 .create-declaration {
   cursor: pointer;
-  width: 472px;
+  width: 410px;
   height: 48px;
   border: 1px solid #4ca34c;
   box-sizing: border-box;
@@ -263,7 +266,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  margin: 61px 0 53px 12px;
+  margin: 61px 102px 53px 12px;
 
   &__menu {
     width: 720px;
@@ -308,8 +311,8 @@
   position: absolute;
   top: 19.5px;
   left: 0;
-  width: 720px;
-  height: 720px;
+  width: 770px;
+  height: 770px;
   margin: 2rem auto;
   background: transparent;
   border-radius: 50%;
