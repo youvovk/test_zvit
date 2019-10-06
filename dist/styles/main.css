@@ -334,7 +334,7 @@
     z-index: 12; }
   .health:hover {
     z-index: 11;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .health:active {
     fill: white;
     color: white;
@@ -369,7 +369,7 @@
     z-index: 12; }
   .education:hover {
     z-index: 13;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .education:active {
     fill: white;
     color: white;
@@ -405,7 +405,7 @@
     opacity: 0;
     z-index: 12; }
   .home:hover {
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: 13; }
   .home:active {
     fill: white;
@@ -443,7 +443,7 @@
     z-index: 12; }
   .percent:hover {
     z-index: 13;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .percent:active {
     fill: white;
     color: white;
@@ -478,7 +478,7 @@
     z-index: 12; }
   .key:hover {
     z-index: 13;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .key:active {
     fill: white;
     color: white;
@@ -513,7 +513,7 @@
     z-index: 12; }
   .co2:hover {
     z-index: 13;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .co2:active {
     fill: white;
     color: white;
@@ -550,7 +550,7 @@
     z-index: 12; }
   .protect:hover {
     z-index: 13;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .protect:active {
     fill: white;
     color: white;
@@ -587,7 +587,7 @@
     z-index: 12; }
   .child:hover {
     z-index: 13;
-    opacity: 0.5; }
+    opacity: 0.6; }
   .child:active {
     fill: white;
     color: white;
